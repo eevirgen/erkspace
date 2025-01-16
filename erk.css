@@ -1,0 +1,45 @@
+body {
+    background: no-repeat fixed black;
+}
+
+p {
+    font-family: Courier, serif;
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 16px;
+}
+
+.blogtitle {
+    font-family: Courier, sans-serif;
+    color: #339900;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    font-family: Courier, sans-serif;
+    font-size: 13px;
+}
+
+A {
+    font-weight: bold;
+    color: #339900;
+}
+
+A:hover {
+    color: red;
+}
+
+.date {
+    font-family: Courier, sans-serif;
+    color: #339900;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.byline {
+    font-family: Courier, sans-serif;
+    color: #999999;
+    font-size: 14px;
+}
