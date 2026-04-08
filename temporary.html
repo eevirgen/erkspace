@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tempo...</title>
+
+  <!-- JS ile güçlü yönlendirme -->
+  <script>
+    (function () {
+      var target = "https://chatgpt.com/?temporary-chat=true";
+
+      try {
+        if (window.top) {
+          window.top.location.replace(target);
+        } else {
+          window.location.replace(target);
+        }
+      } catch (e) {
+        window.location.href = target;
+      }
+
+      // ekstra fallback
+      setTimeout(function () {
+        try { window.location.replace(target); }
+        catch (e) { window.location.href = target; }
+      }, 100);
+    })();
+  </script>
+
+  <!-- JS kapalıysa -->
+  <meta http-equiv="refresh" content="0; url=https://chatgpt.com/?temporary-chat=true" />
+</head>
+<body>
+  <p>tempoooo... eğer otomatik gitmezse:</p>
+  <a href="https://chatgpt.com/?temporary-chat=true">
+    tikla!
+  </a>
+</body>
+</html>
